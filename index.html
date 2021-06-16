@@ -1,256 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finteza Demo</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
-    <link rel="shortcut icon" href="img/favicon.ico">
-</head>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  </head>
 
-<body class="light-theme">
+  <body class="light-theme">
     <div style="position: absolute; top: 10px; width: 90%; text-align: center">
-        For more information, Please click
-        <a href="https://support.metaquotes.net/en/analytics">here</a>
+      For more information, Please click
+      <a href="https://support.metaquotes.net/en/analytics"><u>here</u></a>
     </div>
 
     <div id="logo">
-        <a href="index.html">
-            <img id="logo-img" src="img/apple-touch-icon.png" alt="Finteza analytics" align="left" />
-        </a>
-        <div>
-            <div id="website-title" style="height:57px">Finteza Demo Website</div>
-
-        </div>
+      <a href="index.html">
+        <img
+          id="logo-img"
+          src="img/apple-touch-icon.png"
+          alt="Finteza analytics"
+          align="left"
+        />
+      </a>
+      <div>
+        <div id="website-title" style="height: 57px">Finteza Demo Website</div>
+      </div>
     </div>
     <div class="landing__two-colums-with-image">
-        <div class="landing__two-colums-with-image__left">
-            <img src="img/2x-scheme__48b47bd1.png" style="vertical-align: middle" width="584" height="760" />
+      <div class="landing__two-colums-with-image__left">
+        <img
+          src="img/2x-scheme__48b47bd1.png"
+          style="vertical-align: middle"
+          width="584"
+          height="760"
+        />
+      </div>
+      <div
+        id="right-side-container"
+        class="landing__two-colums-with-image__right"
+      >
+        <div id="discription_of_finteza" style="display: table-cell">
+          <h3>
+            Although the system is similar to Google Analytics, it features
+            unique functionality for working with traders:
+          </h3>
+          <ul>
+            <li>
+              <p>
+                Finteza is the only service which can provide an end-to-end
+                out-of-the-box analytics. Find out the real client attraction
+                cost, optimize marketing channels and boost ROI and LTV.
+              </p>
+              <p>
+                The service is tightly integrated with MetaTrader 4/5 platforms:
+                all actions of a potential client are recorded starting from the
+                first site visit, while further statistics are collected
+                directly from the platform. You can check the budget spent to
+                attract and encourage the client, as well as your resulting
+                profits.
+              </p>
+            </li>
+          </ul>
+          <div><br /></div>
+          <ul>
+            <li>
+              <p>
+                With the built-in traffic attribution, third-party services are
+                no longer needed and thus you can save on your marketing budget.
+                Finteza registers all sources, supports different attribution
+                models and shows conversion rates from your website and
+                platform.
+              </p>
+              <p>
+                15 reports are available for comprehensive analysis. In addition
+                to conversion sources, you can analyze audience characteristics
+                (geography, devices and platform, among others) as well as
+                trader behavior (pages, events in the platform and on the site,
+                bounce rate, detailed user logs and other relevant data).
+              </p>
+            </li>
+          </ul>
+          <div><br /></div>
+          <ul>
+            <li>
+              <p>
+                Bot detector will analyze the quality of your purchased
+                advertising traffic. It will show the amount of fake users and
+                will help in determining reasons for low conversion rates.
+              </p>
+              <p>
+                To compile traffic quality reports, the system checks blacklists
+                to detect spammers, bot farms and DDoS attackers, as well as
+                analyzes each user behavior in your app or site.
+              </p>
+            </li>
+          </ul>
+          <div><br /></div>
+          <ul>
+            <li>
+              <p>
+                Detailed yet easy-to-use sales funnels can show lead and client
+                loss points. You will be able to optimize weak stages and
+                increase the efficiency of your marketing spendings.
+              </p>
+              <p>
+                The system registers website and platform user behavior, groups
+                users by attraction channels and generates comprehensive
+                reports. Based on detected conversion loss points, you will be
+                able to optimize your site and boost profits.
+              </p>
+            </li>
+          </ul>
+          <div><br /></div>
+          <ul>
+            <li>
+              <p>
+                Bonus: built-in advertising engine with the retargeting
+                function. Encourage your traders to make a deposit, to open a
+                new account or to join a promotion. These processes are fast and
+                easy with the integrated ad system. Using the retargeting
+                option, you can display the right message at the right time and
+                thus maximize the efficiency of trader engagement campaigns.
+              </p>
+            </li>
+          </ul>
+          <div class="form_generation_button">
+            <button id="form_generation">click</button>
+          </div>
         </div>
-        <div id="right-side-container" class="landing__two-colums-with-image__right">
-            <div id="discription_of_finteza" style="display: table-cell;">
-                <h3>
-                    Although the system is similar to Google Analytics, it features
-                    unique functionality for working with traders:
-                </h3>
-                <ul>
-                    <li>
-                        <p>
-                            Finteza is the only service which can provide an end-to-end
-                            out-of-the-box analytics. Find out the real client attraction
-                            cost, optimize marketing channels and boost ROI and LTV.
-                        </p>
-                        <p>
-                            The service is tightly integrated with MetaTrader 4/5 platforms:
-                            all actions of a potential client are recorded starting from the
-                            first site visit, while further statistics are collected
-                            directly from the platform. You can check the budget spent to
-                            attract and encourage the client, as well as your resulting
-                            profits.
-                        </p>
-                    </li>
-                </ul>
-                <div><br /></div>
-                <ul>
-                    <li>
-                        <p>
-                            With the built-in traffic attribution, third-party services are
-                            no longer needed and thus you can save on your marketing budget.
-                            Finteza registers all sources, supports different attribution
-                            models and shows conversion rates from your website and
-                            platform.
-                        </p>
-                        <p>
-                            15 reports are available for comprehensive analysis. In addition
-                            to conversion sources, you can analyze audience characteristics
-                            (geography, devices and platform, among others) as well as
-                            trader behavior (pages, events in the platform and on the site,
-                            bounce rate, detailed user logs and other relevant data).
-                        </p>
-                    </li>
-                </ul>
-                <div><br /></div>
-                <ul>
-                    <li>
-                        <p>
-                            Bot detector will analyze the quality of your purchased
-                            advertising traffic. It will show the amount of fake users and
-                            will help in determining reasons for low conversion rates.
-                        </p>
-                        <p>
-                            To compile traffic quality reports, the system checks blacklists
-                            to detect spammers, bot farms and DDoS attackers, as well as
-                            analyzes each user behavior in your app or site.
-                        </p>
-                    </li>
-                </ul>
-                <div><br /></div>
-                <ul>
-                    <li>
-                        <p>
-                            Detailed yet easy-to-use sales funnels can show lead and client
-                            loss points. You will be able to optimize weak stages and
-                            increase the efficiency of your marketing spendings.
-                        </p>
-                        <p>
-                            The system registers website and platform user behavior, groups
-                            users by attraction channels and generates comprehensive
-                            reports. Based on detected conversion loss points, you will be
-                            able to optimize your site and boost profits.
-                        </p>
-                    </li>
-                </ul>
-                <div><br /></div>
-                <ul>
-                    <li>
-                        <p>
-                            Bonus: built-in advertising engine with the retargeting
-                            function. Encourage your traders to make a deposit, to open a
-                            new account or to join a promotion. These processes are fast and
-                            easy with the integrated ad system. Using the retargeting
-                            option, you can display the right message at the right time and
-                            thus maximize the efficiency of trader engagement campaigns.
-                        </p>
-                    </li>
-                </ul>
-                <div class="form_generation_button">
-                    <button id="form_generation">click</button>
-                </div>
-            </div>
 
-            <div style="display:none" id="211650936345860">
-                <form class="jotform-form" action="https://submit.jotform.com/submit/211650936345860/" method="post"
-                    accept-charset="utf-8" autocomplete="on">
-
-                    <div role="main" class="form-all">
-                        <ul class="form-section page-section">
-                            <li id="cid_1" class="form-input-wide" data-type="control_head">
-                                <div class="form-header-group header-large">
-                                    <div class="header-text httal htvam">
-                                        <h1 id="header_1" class="form-header" data-component="header">
-                                            Customer Details:
-                                        </h1>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="form-line jf-required" data-type="control_fullname" id="id_3">
-                                <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3">
-                                    Full Name
-                                    <span class="form-required"> * </span>
-                                </label>
-                                <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
-                                    <div data-wrapper-react="true">
-                                        <span class="form-sub-label-container" style="vertical-align: top"
-                                            data-input-type="first">
-                                            <input type="text" id="first_3" name="q3_fullName3[first]"
-                                                class="form-textbox validate[required]" size="10" value=""
-                                                data-component="first" aria-labelledby="label_3 sublabel_3_first"
-                                                required="" />
-                                            <label class="form-sub-label" for="first_3" id="sublabel_3_first"
-                                                style="min-height: 13px" aria-hidden="false">
-                                                First Name
-                                            </label>
-                                        </span>
-                                        <span class="form-sub-label-container" style="vertical-align: top"
-                                            data-input-type="last">
-                                            <input type="text" id="last_3" name="q3_fullName3[last]"
-                                                class="form-textbox validate[required]" size="15" value=""
-                                                data-component="last" aria-labelledby="label_3 sublabel_3_last"
-                                                required="" />
-                                            <label class="form-sub-label" for="last_3" id="sublabel_3_last"
-                                                style="min-height: 13px" aria-hidden="false">
-                                                Last Name
-                                            </label>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="form-line" data-type="control_email" id="id_6">
-                                <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6">
-                                    E-mail<span class="form-required"> * </span>
-                                </label>
-                                <div id="cid_6" class="form-input-wide" data-layout="half">
-                                    <span class="form-sub-label-container" style="vertical-align: top">
-                                        <input type="email" id="input_6" name="q6_email6"
-                                            class="form-textbox validate[Email]" style="width: 310px;" size="310"
-                                            value="" placeholder="ex: email@yahoo.com" data-component="email"
-                                            aria-labelledby="label_6 sublabel_input_6" />
-
-                                </div>
-                            </li>
-                            <li class="form-line jf-required" data-type="control_dropdown" id="id_8">
-                                <label class="form-label form-label-top form-label-auto" id="label_8" for="input_8">
-                                    Account type?
-                                    <span class="form-required"> * </span>
-                                </label>
-                                <div id="cid_8" class="form-input-wide jf-required" data-layout="half">
-                                    <select class="form-dropdown validate[required]" id="input_8" name="q8_howDid8"
-                                        style="width: 310px" data-component="dropdown" required="">
-                                        <option value="">Please Select</option>
-                                        <option value="Demo">Demo account</option>
-                                        <option value="Real">real account</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li class="form-line" data-type="control_checkbox" id="id_13">
-                                <label class="form-label form-label-top form-label-auto" id="label_13" for="input_13">
-                                    Would you like to receive newsletter from us?
-                                </label>
-                                <div class="radio-toolbar">
-                                    <input type="radio" id="radioYes" name="YesNo" value="yes" checked>
-                                    <label for="radioYes">Yes</label>
-
-                                    <input type="radio" id="radioNo" name="YesNo" value="no">
-                                    <label for="radioNo">No</label>
-
-                                </div>
-                            </li>
-                            <li class="form-line" data-type="control_button" id="id_2">
-                                <div id="cid_2" class="form-input-wide" data-layout="full">
-                                    <div data-align="left" class="
-                  form-buttons-wrapper form-buttons-left
-                  jsTest-button-wrapperField
-                ">
-                                        <button id="input_2" type="submit" class="
-                    form-submit-button
-                    submit-button
-                    jf-form-buttons
-                    jsTest-submitField
-                  " data-component="button" data-content="">
-                                            Submit
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li style="display: none">
-                                Should be Empty:
-                                <input type="text" name="website" value="" />
-                            </li>
-                        </ul>
+        <div style="display: none" id="211650936345860">
+          <form
+            action=""
+            method="post"
+            accept-charset="utf-8"
+            autocomplete="on"
+          >
+            <div role="main" class="form-all">
+              <ul class="form-section page-section">
+                <li id="cid_1" class="form-input-wide" data-type="control_head">
+                  <div class="form-header-group header-large">
+                    <div class="header-text httal htvam">
+                      <h1
+                        id="header_1"
+                        class="form-header"
+                        data-component="header"
+                      >
+                        Customer Details:
+                      </h1>
                     </div>
-                    <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="211650936345860" />
-                    <script type="text/javascript">
-                        var all_spc = document.querySelectorAll(
-                            "form[id='211650936345860'] .si" + "mple" + "_spc"
-                        );
-                        for (var i = 0; i < all_spc.length; i++) {
-                            all_spc[i].value = "211650936345860-211650936345860";
-                        }
-                    </script>
-                </form>
+                  </div>
+                </li>
+                <li
+                  class="form-line jf-required"
+                  data-type="control_fullname"
+                  id="id_3"
+                >
+                  <label
+                    class="form-label form-label-top form-label-auto"
+                    id="label_3"
+                    for="first_3"
+                  >
+                    Full Name
+                    <span class="form-required"> * </span>
+                  </label>
+                  <div
+                    id="cid_3"
+                    class="form-input-wide jf-required"
+                    data-layout="full"
+                  >
+                    <div data-wrapper-react="true">
+                      <span
+                        class="form-sub-label-container"
+                        style="vertical-align: top"
+                        data-input-type="first"
+                      >
+                        <input
+                          type="text"
+                          id="first_3"
+                          name="q3_fullName3[first]"
+                          class="form-textbox validate[required]"
+                          size="10"
+                          value=""
+                          data-component="first"
+                          aria-labelledby="label_3 sublabel_3_first"
+                          required=""
+                        />
+                        <label
+                          class="form-sub-label"
+                          for="first_3"
+                          id="sublabel_3_first"
+                          style="min-height: 13px"
+                          aria-hidden="false"
+                        >
+                          First Name
+                        </label>
+                      </span>
+                      <span
+                        class="form-sub-label-container"
+                        style="vertical-align: top"
+                        data-input-type="last"
+                      >
+                        <input
+                          type="text"
+                          id="last_3"
+                          name="q3_fullName3[last]"
+                          class="form-textbox validate[required]"
+                          size="15"
+                          value=""
+                          data-component="last"
+                          aria-labelledby="label_3 sublabel_3_last"
+                          required=""
+                        />
+                        <label
+                          class="form-sub-label"
+                          for="last_3"
+                          id="sublabel_3_last"
+                          style="min-height: 13px"
+                          aria-hidden="false"
+                        >
+                          Last Name
+                        </label>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="form-line" data-type="control_email" id="id_6">
+                  <label
+                    class="form-label form-label-top form-label-auto"
+                    id="label_6"
+                    for="input_6"
+                  >
+                    E-mail<span class="form-required"> * </span>
+                  </label>
+                  <div id="cid_6" class="form-input-wide" data-layout="half">
+                    <span
+                      class="form-sub-label-container"
+                      style="vertical-align: top"
+                    >
+                      <input
+                        type="email"
+                        id="input_6"
+                        name="q6_email6"
+                        class="form-textbox validate[Email]"
+                        style="width: 310px"
+                        size="310"
+                        value=""
+                        placeholder="ex: email@yahoo.com"
+                        data-component="email"
+                        aria-labelledby="label_6 sublabel_input_6"
+                      />
+                    </span>
+                  </div>
+                </li>
+                <li
+                  class="form-line jf-required"
+                  data-type="control_dropdown"
+                  id="id_8"
+                >
+                  <label
+                    class="form-label form-label-top form-label-auto"
+                    id="label_8"
+                    for="input_8"
+                  >
+                    Account type
+                    <span class="form-required"> * </span>
+                  </label>
+                  <div
+                    id="cid_8"
+                    class="form-input-wide jf-required"
+                    data-layout="half"
+                  >
+                    <select
+                      class="form-dropdown validate[required]"
+                      id="input_8"
+                      name="q8_howDid8"
+                      style="width: 310px"
+                      data-component="dropdown"
+                      required=""
+                    >
+                      <option value="">Please Select</option>
+                      <option value="Demo">Demo account</option>
+                      <option value="Real">real account</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="form-line" data-type="control_checkbox" id="id_13">
+                  <label
+                    class="form-label form-label-top form-label-auto"
+                    id="label_13"
+                    for="input_13"
+                  >
+                    Would you like to receive newsletter from us?
+                  </label>
+                  <div class="radio-toolbar">
+                    <input
+                      type="radio"
+                      id="radioYes"
+                      name="YesNo"
+                      value="yes"
+                      checked
+                    />
+                    <label for="radioYes">Yes</label>
 
+                    <input type="radio" id="radioNo" name="YesNo" value="no" />
+                    <label for="radioNo">No</label>
+                  </div>
+                </li>
+                <li class="form-line" data-type="control_button" id="id_2">
+                  <div id="cid_2" class="form-input-wide" data-layout="full">
+                    <div
+                      data-align="left"
+                      class="
+                        form-buttons-wrapper form-buttons-left
+                        jsTest-button-wrapperField
+                      "
+                    >
+                      <button
+                        id="input_2"
+                        type="submit"
+                        class="
+                          form-submit-button
+                          submit-button
+                          jf-form-buttons
+                          jsTest-submitField
+                        "
+                        data-component="button"
+                        data-content=""
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-
+            <input
+              type="hidden"
+              class="simple_spc"
+              id="simple_spc"
+              name="simple_spc"
+              value="211650936345860"
+            />
+            <script type="text/javascript">
+              var all_spc = document.querySelectorAll(
+                "form[id='211650936345860'] .si" + "mple" + "_spc"
+              );
+              for (var i = 0; i < all_spc.length; i++) {
+                all_spc[i].value = "211650936345860-211650936345860";
+              }
+            </script>
+          </form>
         </div>
-        <script>
-            document
-                .getElementById("form_generation")
-                .addEventListener("click", form_generator);
-        </script>
-
-</body>
-
+      </div>
+      <script>
+        document
+          .getElementById("form_generation")
+          .addEventListener("click", form_generator);
+      </script>
+    </div>
+  </body>
 </html>
