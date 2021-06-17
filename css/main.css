@@ -368,3 +368,16 @@ button#form_generation:hover {
   color: springgreen;
   box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
 }
+.page-section li[data-type="control_button"] {
+  padding: 0;
+  margin: 0;
+}
+
+ul.page-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 38px;
+  list-style: none;
+}
