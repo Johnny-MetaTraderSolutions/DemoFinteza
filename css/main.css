@@ -5,7 +5,18 @@ body {
   margin-top: 50px;
   font-size: 16px;
 }
+button.circle_background{
+  position:absolute;
+  left: 40px;
+  top:65px;
 
+}
+svg.menu-icon{
+  position: relative;
+}
+svg.menu-icon:hover{
+  box-shadow: black;
+}
 #website-title {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 30px;
@@ -72,7 +83,7 @@ a {
 }
 
 .form-dropdown:required:invalid {
-  color: #8894ab;
+  color: #0056f7;
   font-weight: 300;
 }
 
@@ -97,24 +108,7 @@ a {
   transition: background-color 0.15s;
 }
 .form-line,
-ul.page-section {
-  flex-wrap: wrap;
-}
-ul.page-section {
-  display: flex;
 
-  align-items: flex-start;
-  margin: 0;
-  padding: 0 38px;
-  list-style: none;
-}
-
-.page-section
-  > li:first-child:not(.form-line-column):not([data-type="control_head"]):not([data-type="control_text"]):not([data-type="control_button"]):not([data-type="control_collapse"]),
-.page-section
-  > li:nth-child(2):not(.form-line-column):not([data-type="control_head"]):not([data-type="control_text"]):not([data-type="control_button"]):not([data-type="control_collapse"]) {
-  margin-top: 28px;
-}
 
 .form-label {
   display: inline-block;
@@ -124,6 +118,7 @@ ul.page-section {
 }
 .form-required {
   margin-left: 4px;
+  color: #f23a3c;
 }
 .form-sub-label {
   font-size: 0.75em;
@@ -196,17 +191,10 @@ li.form-line:not(.form-line-column) .form-input-wide[data-layout="half"] {
   height: 2.5em;
 }
 
-.page-section li[data-type="control_button"] {
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-}
-
 .jf-form-buttons {
   display: flex;
-
+  margin-left: 10px;
   align-items: center;
-
   justify-content: center;
   height: 3em;
   width: auto;
@@ -218,9 +206,6 @@ li.form-line:not(.form-line-column) .form-input-wide[data-layout="half"] {
   border: 1px solid;
   cursor: pointer;
   font-weight: 500;
-}
-.jf-form-buttons:not(.form-pagebreak-back) {
-  margin-left: 10px;
 }
 
 .form-buttons-wrapper,
@@ -235,11 +220,6 @@ li.form-line:not(.form-line-column) .form-input-wide[data-layout="half"] {
 }
 .form-buttons-left {
   justify-content: flex-start;
-}
-
-.submit-button {
-  width: auto;
-  min-width: 180px;
 }
 
 li[data-type="control_head"] {
@@ -301,9 +281,7 @@ li[data-type="control_fullname"] .form-sub-label-container {
 .form-label {
   color: #2c3345;
 }
-.form-required {
-  color: #f23a3c;
-}
+
 .form-sub-label {
   color: #57647e;
 }
@@ -325,8 +303,8 @@ li[data-type="control_fullname"] .form-sub-label-container {
   border-color: #c3cad8;
 }
 
-.formFooter-button,
-.submit-button {
+.submit-button,
+.back-button {
   background-color: #18bd5b;
   border-color: #18bd5b;
   color: #fff;
@@ -341,11 +319,6 @@ li[data-type="control_fullname"] .form-sub-label-container {
 }
 .header-large {
   border-color: #d7d8e1;
-}
-
-.page-section li[data-type="control_button"] .selectedControls + div,
-.page-section li[data-type="control_button"] > div:first-child {
-  width: 100%;
 }
 
 .form-textarea,
@@ -384,4 +357,14 @@ li[data-type="control_fullname"] .form-sub-label-container {
 .radio-toolbar input[type="radio"]:checked + label {
   background-color: rgb(100, 200, 240);
   border-color: rgb(194, 236, 96);
+}
+button#form_generation {
+  border-radius: 45px;
+  background: repeating-radial-gradient(black, transparent 100px);
+  color: paleturquoise;
+  font-family: system-ui;
+}
+button#form_generation:hover {
+  color: springgreen;
+  box-shadow: 0 12px 16px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
 }
