@@ -28,13 +28,13 @@ function show_description() {
   Array.from(elements).forEach((element) => {
     element.style.display = "none";
   });
-  document.getElementById("discription_of_finteza").style.display =
+  document.getElementById("description_of_finteza").style.display =
     "table-cell";
 }
 
 function form_generator() {
-  var content = document.getElementById("discription_of_finteza");
+  var content = document.getElementById("description_of_finteza");
   content.style.display = "none";
-  var form = document.getElementById("211650936345860");
+  var form = document.getElementById("user-form");
   form.style.display = "table-cell";
 }
