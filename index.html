@@ -15,24 +15,12 @@
       For more information, Please click
       <a href="https://support.metaquotes.net/en/analytics"><u>here</u></a>
     </div>
-    <div></div>
-    <div>
-      <button class="circle_background"
-        ><svg class="menu-icon" style="width: 16px; height: 16px; margin: 6px">
-          <path
-            d="M2,4c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M8,16c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M2,16c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M2,10c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M8,10c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M12,2c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2z
-                M8,4c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M14,10c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z
-                M14,16c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
-          ></path>
-        </svg>
-        
-      </button>
+    <div id="menu">
+      <script>
+        $(function () {
+          $("#menu").load("pages/menu-button.html");
+        });
+      </script>
     </div>
     <div id="logo">
       <a href="index.html">
@@ -146,7 +134,7 @@
             </li>
           </ul>
           <div class="form_generation_button">
-            <button id="form_generation">Get it <b>NOW</b></button>
+            <button id="form_generation">Try it <b>NOW</b></button>
           </div>
         </div>
 
