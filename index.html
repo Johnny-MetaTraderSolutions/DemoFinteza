@@ -49,18 +49,19 @@
         class="landing__two-colums-with-image__right"
       >
         <div id="description_of_finteza" style="display: table-cell">
-          <script>$("#description_of_finteza").load("pages/main_page_description.html")</script>
+          <script>
+            $("#description_of_finteza").load(
+              "pages/main_page_description.html"
+            );
+          </script>
         </div>
 
         <div style="display: none" id="user-form">
-          <script>$("#user-form").load("pages/main_page_form.html")</script>
+          <script>
+            $("#user-form").load("pages/main_page_form.html");
+          </script>
         </div>
       </div>
-      <script>
-        $(document.getElementById("description_of_finteza")).ready(()=>{
-          document.getElementById("form_generation").addEventListener("click", form_generator);
-        })
-      </script>
     </div>
     <div></div>
   </body>

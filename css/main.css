@@ -4,8 +4,13 @@ body {
   margin-right: 100px;
   margin-top: 50px;
   font-size: 16px;
+  color: #075aa6;
+  background: #f1f2f3;
 }
-button.circle_background{
+#description_of_finteza{
+  max-width: 752px;
+}
+button.circle_background {
   position: absolute;
   left: 40px;
   top: 55px;
@@ -15,13 +20,13 @@ button.circle_background{
   border-radius: 50%;
   border-color: transparent;
 }
-button.circle_background:hover{
+button.circle_background:hover {
   background-color: rgb(185 185 185 / 78%);
 }
-svg.menu-icon{
+svg.menu-icon {
   position: relative;
 }
-svg.menu-icon:hover{
+svg.menu-icon:hover {
   box-shadow: black;
 }
 #website-title {
@@ -32,10 +37,6 @@ svg.menu-icon:hover{
   font-weight: bold;
 }
 
-.light-theme {
-  color: #075aa6;
-  background: #f1f2f3;
-}
 ul {
   font-family: helvetica;
 }
@@ -115,8 +116,6 @@ a {
   transition: background-color 0.15s;
 }
 .form-line,
-
-
 .form-label {
   display: inline-block;
   font-size: 16px;
@@ -387,4 +386,38 @@ ul.page-section {
   margin: 0;
   padding: 0 38px;
   list-style: none;
+}
+
+.menu-panel {
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 55px;
+  left: 40px;
+  background-color: rgb(141, 138, 138);
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-radius: 10%;
+}
+
+.menu-panel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-panel a:hover {
+  color: #1cca1c;
+}
+
+.menu-panel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
